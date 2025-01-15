@@ -14,14 +14,130 @@
     <main style="padding-top: 100px;">
         <h1>Các kiệt tác thơ tình</h1>
         <!--   html thì bắt đầu từ đây   -->
+    <script>
+        function togglePoem(poemId) {
+            var poemContent = document.getElementById(poemId);
+            if (poemContent.style.display === "none") {
+                poemContent.style.display = "block";
+            } else {
+                poemContent.style.display = "none";
+            }
+        }
+    </script>
+ <div class="poem">
+        <button onclick="togglePoem('poem1')"class="full-width-button">Bài Thơ: Hoa cỏ may</button>
+        <div id="poem1" style="display:none;">
+            <p><strong>Hoa cỏ may</strong></p>
+            <p>Cát vắng, sông đầy, cây ngẩn ngơ,<br>
+            Không gian xao xuyến chuyển sang mùa.<br>
+            Tên mình ai gọi sau vòm lá,<br>
+            Lối cũ em về nay đã thu.<br>
+            Mây trắng bay đi cùng với gió,<br>
+            Lòng như trời biếc lúc nguyên sơ.<br>
+            Đắng cay gửi lại bao mùa cũ,<br>
+            Thơ viết đôi dòng theo gió xa.<br>
+            Khắp nẻo dâng đầy hoa cỏ may<br>
+            Áo em sơ ý cỏ găm đầy<br>
+            Lời yêu mỏng mảnh như màu khói,<br>
+            Ai biết lòng anh có đổi thay?</p>
+        </div>
+    </div>
+<div class="poem">
+            <button onclick="togglePoem('poem2')"class="full-width-button">Bài Thơ: Tình thứ nhất</button>
+            <div id="poem2" style="display:none;">
+                <p><strong>Tình thứ nhất</strong></p>
+                <p>Anh chỉ có một tình yêu thứ nhất<br>
+                Đem cho em kèm với một lá thư<br>
+                Em không lấy là tình anh đã mất<br>
+                Tình đã cho không lấy lại bao giờ<br><br>
+                Thư thì mỏng như suốt đời mộng ảo<br>
+                Tình thì buồn như tất cả chia ly<br>
+                Xếp khuôn giấy để hoài trong túi áo<br>
+                Mãi trăm lần mới gấp lại đưa đi<br><br>
+                Em xé như lòng non cùng giấy mới<br>
+                Mây dần trôi hôm ấy phủ sơn khê<br>
+                Thôi thôi nhé, hoa đã sầu dưới đất<br>
+                Cười trên cành sao được nữa em ơi!<br><br>
+                Anh chỉ có một tình yêu thứ nhất<br>
+                Đem cho em là đã mất đi rồi!</p>
+            </div>
+	</div>
+ <div class="poem">
+            <button onclick="togglePoem('poem3')"class="full-width-button">Bài Thơ: Dỗi</button>
+            <div id="poem3" style="display:none;">
+                <p><strong>Dỗi</strong></p>
+                <p>Mặt trăng anh trả cho trời<br>
+                Vườn hoa anh trả cho người tới thăm<br>
+                Hồ Tây chiều ấy mưa dầm<br>
+                Anh xin trả lại cho năm tháng dài.<br><br>
+                Nhìn em trong phút giây thôi<br>
+                Mà anh đã ngỡ đất trời buồn tênh<br>
+                Cõi đời anh thấy nhạt thênh<br>
+                Tưởng anh không được cùng em chung nhìn.</p>
+            </div>
+	</div>
+ <div class="poem">
+            <button onclick="togglePoem('poem4')"class="full-width-button">Bài Thơ: Tình em</button>
+            <div id="poem4" style="display:none;">
+                <p><strong>Tình em</strong></p>
+                <p>Anh muốn em là riêng của anh<br>
+		   Mong đừng ai đến ... mắt long lanh<br>
+    		   Tình em chỉ có anh trao nhận<br>
+		   Những lúc vắng, xa hãy để dành!</p>
+            </div>
+	</div>
+<div class="poem">
+            <button onclick="togglePoem('poem5')"class="full-width-button">Bài Thơ: Mùa thu không của riêng anh</button>
+            <div id="poem5" style="display:none;">
+                <p><strong>Mùa thu không của riêng anh</strong></p>
+                <p>Thu nào đâu phải của riêng anh<br>
+	           Trăng rụng hồ tây sóng gợn xanh<br>                            
+		   Buổi ấy em về thăm phố nội<br>
+		   Bóng tà vừa đỗ nắng qua nhanh.<br><br>
 
-        
-        <!--  kết thức html ở đây  -->
+		   Lá vàng buông nhẹ hôn mặt cỏ<br>
+		   Trai gái nhìn nhau ghép mộng lành<br>
+		   Anh ở nơi nào trong tiếng gió<br>
+		   Lời thơ văng vẳng suốt năm canh.</p>
+</div>
+</div>
+	        <!--  kết thức html ở đây  -->
     </main>
 </body>
 <style>
     /* thích làm style thìlàm từ đây đổ xuống nhé      */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f4f4f9;
+}
+   .full-width-button {
+    width: 100%; /* Nút chiếm toàn bộ chiều rộng của màn hình */
+    padding: 10px;
+    font-size: 20px;
+    background-color: #f8c8d8; /* Màu nền hồng nhạt */
+    color: white;
+    border: 5px solid #f8c8d8; /* Border cùng màu hồng nhạt */
     
+}
+
+/* Màu nền khi hover (di chuột qua) */
+.full-width-button:hover {
+    background-color: #c3efff; /* Màu nền hồng đậm hơn khi hover */
+}
+
+/* Nội dung các bài thơ */
+.poem {
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
     /* Kệ đống bên dưới đi cmay bắt đầu làm css từ đây đổ lên trên nhé */
     body {
         margin: 0;
